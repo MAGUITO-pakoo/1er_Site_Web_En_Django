@@ -1,31 +1,30 @@
 {% extends 'main/base.html' %}
 
-{% block title %}View List{% endblock %}
+{% block title %}Voir la liste{% endblock %}
 
 {% block content %}
 	<h2>{{ls.name}}</h2>
-	<form method="post", action="#">
+	<form method="post" action="#">
 		{% csrf_token %}
 
-		{% for item in ls.item_set.all%}
+		{% for item in ls.item_set.all %}
 			<div class="input-group mb-3">
 	  			<div class="input-group-prepend">
 	    			<div class="input-group-text">
-	      				<input type="checkbox" name="c{{item.id}}" value="clicked" aria-label="Checkbox for following text input" {% if item.complete %} checked {% endif %}>
+	      				<input type="checkbox" name="c{{item.id}}" value="clicked" aria-label="Case à cocher pour saisir du texte" {% if item.complete %} checked {% endif %}>
 	    			</div>
 	  			</div>
-	  			<input type="text" name="text{{item.id}}" value="{{item.text}}" class="form-control" aria-label="Text input with checkbox">
+	  			<input type="text" name="text{{item.id}}" value="{{item.text}}" class="form-control" aria-label="Saisie de texte avec case à cocher">
 			</div>
 		{% endfor %}
 
 		<div class="input-group mb-3">
 	  		<div class="input-group-prepend">
-	  		<button name="add", value="add", type="submit", class="btn btn-success">Add New</button>
+	  		<button name="add" value="add" type="submit" class="btn btn-success">Ajouter</button>
 	  		</div>
 	  		<input type="text" name="new" value="" class="form-control">
-	  		
 		</div>
 		<br>
-		<button name="save", value="save", type="submit", class="btn btn-success">Save</button>
+		<button name="save" value="save" type="submit" class="btn btn-success">Enregistrer</button>
 	</form>
 {% endblock %}

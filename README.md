@@ -1,26 +1,16 @@
-# Django-Website
-A very minimal website I built while learning Django.
+Django-Website
 
-# Run The Website
-This website requires a few python packages:
-- django
-- django-crispy-forms
+Un site web minimaliste que j’ai créé en apprenant Django.
 
-To run the website navigate to upper level "mysite" directory and run the command via cmd: *python manage.py runserver*
-Then you should see a local host link that you can copy into your browser to see the website.
+Lancer le site web
 
-# Video Tutorials
-You can watch these video tutorials to learn how to use django: https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9
+Ce site web nécessite quelques packages Python :
 
-# 💻 Launch Your Software Development Career Today!  
+django
 
-🎓 **No degree? No problem!** My program equips you with everything you need to break into tech and land an entry-level software development role.  
+django-crispy-forms
 
-🚀 **Why Join?**  
-- 💼 **$70k+ starting salary potential**  
-- 🕐 **Self-paced:** Complete on your own time  
-- 🤑 **Affordable:** Low risk compared to expensive bootcamps or degrees
-- 🎯 **45,000+ job openings** in the market  
+Pour lancer le site, naviguez vers le répertoire supérieur "mysite" et exécutez la commande via cmd :"python manage.py runserver"
 
-👉 **[Start your journey today!](https://techwithtim.net/dev)**  
-No experience needed—just your determination. Future-proof your career and unlock six-figure potential like many of our students have!  
+By LadyBlack
+

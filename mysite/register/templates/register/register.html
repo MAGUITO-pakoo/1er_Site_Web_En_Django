@@ -1,6 +1,6 @@
 {% extends 'main/base.html' %}
 
-{% block titlte %}Register{% endblock %}
+{% block title %}Inscription{% endblock %}
 
 {% load crispy_forms_tags %}
 
@@ -8,9 +8,9 @@
 	<div class="content-section">
 		<form method="POST" class="form-group">
 			{% csrf_token %}
-			<legend class="border-bottom mb-3">Create an Account</legend>
+			<legend class="border-bottom mb-3">Créer un compte</legend>
 			{{form|crispy}}
-			<button name="create", type="submit", class="btn btn-success">Register</button>
+			<button name="create" type="submit" class="btn btn-success">S’inscrire</button>
 		</form>
 	</div>
 {% endblock %}

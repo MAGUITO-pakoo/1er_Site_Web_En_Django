@@ -9,6 +9,7 @@ class CustomUserAdmin(UserAdmin):
     add_form = RegisterForm
     form = CustomUserChangeForm
     model = CustomUser
-    list_display = ['email', 'username',]
+    list_display = ['email', 'username']  # champs affichés dans l'administration
 
+# Enregistrement du modèle utilisateur personnalisé dans l'admin Django
 admin.site.register(CustomUser, CustomUserAdmin)

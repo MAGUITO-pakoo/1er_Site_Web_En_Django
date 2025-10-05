@@ -1,7 +1,6 @@
 {% extends 'main/base.html' %}
 
-{% block title %}View All Lists{% endblock %}
-
+{% block title %}Voir toutes les listes{% endblock %}
 
 {% block content %}
 	{% if user.is_authenticated %}
@@ -11,6 +10,6 @@
 		{% endfor %}
 		</ul>
 	{% else %}
-		<h3>Login <a href="/login">Here</a></h3>
+		<h3>Connectez-vous <a href="/login">ici</a></h3>
 	{% endif %}
 {% endblock %}

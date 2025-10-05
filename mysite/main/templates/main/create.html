@@ -1,16 +1,16 @@
 {% extends 'main/base.html' %}
 {% block title %}
-Create New List
+Créer une nouvelle liste
 {% endblock %}
 
 {% block content %}
-	<h3>Create a New To Do List</h3>
+	<h3>Créer une nouvelle liste de tâches</h3>
 	<br>
-	<form method="post", action="/create/" class="form-group">
+	<form method="post" action="/create/" class="form-group">
 		{% csrf_token %}
 		<div class="input-group mb-3">
 	  		<div class="input-group-prepend">
-	  		<button name="save", type="submit", class="btn btn-success">Create</button>
+	  		<button name="save" type="submit" class="btn btn-success">Créer</button>
 	  		</div>
 	  		{{form.name}}
 		</div>
